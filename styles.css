@@ -1,0 +1,162 @@
+/* Resetovanie základných štýlov */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Playfair Display', serif; */
+    font-family: sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* HEADER */
+.site-header {
+    display: flex; /* Flexbox pre lepšie zarovnanie */
+    justify-content: space-between; /* Rozmiestnenie medzi ľavou a pravou stranou */
+    align-items: center; /* Vertikálne zarovnanie do stredu */
+    background: #333;
+    color: white;
+    padding: 15px 30px;
+}
+
+.site-identity {
+    /* Pre ľavú stranu (meno a priezvisko) */
+}
+
+.site-identity h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-navigation {
+    /* Pre pravú stranu (menu odkazy) */
+}
+
+.site-navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Flexbox pre odkazy na pravej strane */
+}
+
+.site-navigation li {
+    margin-left: 20px;
+}
+
+.site-navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* HLAVNÝ OBSAH */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    flex-grow: 1; /* Dôležité pre posunutie footera dolu */
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* TABUĽKA KONTAKTOV */
+.contact-table {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #3d29291a;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.contact-table th {
+    background: #353030;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.contact-table td {
+    border: 10px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;  /* 🆕 Nový font pre kontaktné údaje */
+    font-weight: bold;
+    color: #222;
+}
+
+/* FORMULÁR */
+.contact-form {
+    display: grid;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Inputy - zarovnaný text na stred */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center; /* 🆕 Zarovnávanie textu na stred */
+}
+
+/* Zvýraznenie input po kliknutí */
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #333;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.5);
+}
+
+/* Tlačidlo Odoslať */
+.contact-form button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+/* FOOTER - na spodok stránky */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.btn-instagram {
+    display: inline-block;
+    background: #e4405f;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-instagram:hover {
+    background: #c13584;
+}

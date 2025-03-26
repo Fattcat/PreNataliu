@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>nataliajurkech_design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="site-header">
+            <div class="site-identity">
+                <h1><a href="index.html">nataliajurkech_design</a></h1>
+            </div>
+            <nav class="site-navigation">
+                <ul>
+                    <li><a href="index.html">Domov</a></li>
+                    <li><a href="omne.html">O mne</a></li>
+                    <li><a href="navrhy.html">Návrhy</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            <div class="container contactFormContainer">
+                <h2>Kontakt</h2>
+                <p>V prípade záujmu o spoluprácu ma neváhajte kontaktovať. Cena za návrh sa odvíja od rôznych faktorov (rozlohy, zložitosti návrhu a podobne).</p> 
+                <p>Ak máte záujem o návrh interiéru, zašlite e-mail s podkladmi (pôdorys, fotografie, inšpirácie) a dohodneme si stretnutie.</p>
+
+                <table class="contact-table">
+                    <tr>
+                        <th>Meno:</th>
+                        <td>Natália Jurkechová</td>
+                    </tr>
+                    <tr>
+                        <th>E-mail:</th>
+                        <td><a href="mailto:nataliajurkech@gmail.com">nataliajurkech@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>Telefón:</th>
+                        <td><a href="tel:+421948024188">+421 948 024 188</a></td>
+                    </tr>
+                </table>
+
+                <h3>Napíšte mi správu</h3>
+                <form action="action_page.php" class="contact-form">
+                    <label for="meno">Meno:</label>
+                    <input type="text" id="meno" name="meno" required>
+
+                    <label for="priezvisko">Priezvisko:</label>
+                    <input type="text" id="priezvisko" name="priezvisko" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefon">Telefónne číslo:</label>
+                    <input type="tel" id="telefon" name="telefon" required>
+
+                    <label for="sprava">Správa:</label>
+                    <textarea id="sprava" name="sprava" rows="5" placeholder="Vaša správa..." required></textarea>
+
+                    <label for="subor">Priložte súbory:</label>
+                    <input type="file" id="subor" name="subor" multiple>
+
+                    <button type="submit">Odoslať</button>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2021  Natália Jurkechová</p>
+            <a href="https://www.instagram.com/nataliajurkech/"> <img src="images/IG-Logo.png" width="40" height="40" alt="instagram" class="overflow img30"></a>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
